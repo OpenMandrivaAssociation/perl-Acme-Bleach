@@ -1,9 +1,9 @@
 %define upstream_name    Acme-Bleach
-%define upstream_version 1.12
+%define upstream_version 1.13
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    For I<really> clean programs
 License:    GPL+ or Artistic
