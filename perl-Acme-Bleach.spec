@@ -1,15 +1,15 @@
 %define upstream_name    Acme-Bleach
-%define upstream_version 1.13
+%define upstream_version 1.150
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	For I<really> clean programs
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Acme/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Acme/Acme-Bleach-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -67,4 +67,5 @@ make test
 
 * Sat Jun 13 2009 cpan2dist 1.12-1mdv
 - initial mdv release, generated with cpan2dist
+
 
