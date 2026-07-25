@@ -2,14 +2,14 @@
 %define upstream_version 1.150
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	For I<really> clean programs
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Acme/Acme-Bleach-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Acme-Bleach
+Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Acme-Bleach-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
