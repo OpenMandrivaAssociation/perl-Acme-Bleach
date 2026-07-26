@@ -1,15 +1,13 @@
 %define upstream_name    Acme-Bleach
-%define upstream_version 1.150
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	1.150
+Release:	5
 
 Summary:	For I<really> clean programs
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Acme-Bleach
-Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Acme-Bleach-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Acme-Bleach-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -30,7 +28,7 @@ this:
 	print $x;
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
@@ -59,9 +57,7 @@ make test
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.120.0-1mdv2011.0
 + Revision: 402090
-- rebuild using %%perl_convert_version
-
-* Sat Jun 13 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.12-1mdv2010.0
+- rebuild using %1.150 Sat Jun 13 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.12-1mdv2010.0
 + Revision: 385674
 - import perl-Acme-Bleach
 
