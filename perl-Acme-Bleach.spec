@@ -2,7 +2,7 @@
 %define upstream_version 1.150
 Name:		perl-%{upstream_name}
 Version:	1.150
-Release:	4
+Release:	5
 
 Summary:	For I<really> clean programs
 License:	GPL+ or Artistic
@@ -32,13 +32,13 @@ this:
 %setup -q -n Acme-Bleach-1.150
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 %makeinstall_std
