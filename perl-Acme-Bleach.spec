@@ -47,23 +47,3 @@ make test
 %{perl_vendorlib}/*
 
 
-%changelog
-* Mon Jun 13 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.130.0-1mdv2011.0
-+ Revision: 684734
-- update to new version 1.13
-
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 1.120.0-2
-+ Revision: 654829
-- rebuild for updated spec-helper
-
-* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.120.0-1mdv2011.0
-+ Revision: 402090
-- rebuild using %1.150 Sat Jun 13 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.12-1mdv2010.0
-+ Revision: 385674
-- import perl-Acme-Bleach
-
-
-* Sat Jun 13 2009 cpan2dist 1.12-1mdv
-- initial mdv release, generated with cpan2dist
-
-
