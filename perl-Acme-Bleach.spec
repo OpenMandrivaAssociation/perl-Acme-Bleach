@@ -2,7 +2,7 @@
 %define upstream_version 1.150
 Name:		perl-%{upstream_name}
 Version:	1.150
-Release:	5
+Release:	6
 
 Summary:	For I<really> clean programs
 License:	GPL+ or Artistic
